@@ -25,5 +25,7 @@ void main() {
   Book book = Book();
   book._title = 'dart programming';
   book._pages = 200;
-  print('book ${book._title} estimated reading time ${book.readingTime} min');
+  print(
+    'book name ${book._title} estimated reading time ${book.readingTime} min',
+  );
 }
