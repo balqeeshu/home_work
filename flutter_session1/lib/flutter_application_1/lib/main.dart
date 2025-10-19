@@ -12,39 +12,28 @@ class BoxColors extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              padding: EdgeInsets.all(8.0),
-              color: Color(0xffB2DFDC),
-              height: 100,
-              width: 400,
-            ),
+            Container(color: Color(0xffB2DFDC), height: 200, width: 400),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
               child: Row(
                 children: [
                   Container(color: Color(0xffE0E0E0), height: 30, width: 30),
                   SizedBox(width: 10),
-                  Container(
-                    padding: EdgeInsets.all(8.0),
-                    color: Color(0xffE0E0E0),
-                    height: 30,
-                    width: 350,
-                  ),
+                  Container(color: Color(0xffE0E0E0), height: 30, width: 355),
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                padding: EdgeInsets.all(8.0),
-                color: Color(0xffE0E0E0),
-                height: 2,
-                width: 400,
-              ),
-            ),
+
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Container(
+            //
+            //     color: Color(0xffE0E0E0),
+            //     height: 2,
+            //     width: 400,
+            //   ),),
+            Divider(color: Colors.grey.shade300, thickness: 1),
             Row(
               children: [
                 Padding(
@@ -52,21 +41,18 @@ class BoxColors extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
                         color: Color(0xffA5D6A7),
-                        height: 40,
+                        height: 45,
                         width: 200,
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
                         color: Color(0xffE4F3FE),
                         height: 10,
                         width: 200,
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
                         color: Color(0xffA5D6A7),
-                        height: 40,
+                        height: 45,
                         width: 200,
                       ),
                     ],
