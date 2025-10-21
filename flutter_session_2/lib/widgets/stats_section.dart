@@ -66,10 +66,7 @@ class StatItem extends StatelessWidget {
             text1!,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 8),
           ),
-          Text(
-            text2!,
-            style: TextStyle(color: Colors.grey.shade300, fontSize: 6),
-          ),
+          Text(text2!, style: TextStyle(color: Colors.grey, fontSize: 6)),
         ],
       ),
     );

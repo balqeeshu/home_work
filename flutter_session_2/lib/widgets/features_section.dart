@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 
 class FeaturesSection extends StatelessWidget {
@@ -37,47 +35,44 @@ class FeaturItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        margin: const EdgeInsets.only(bottom: 12),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.05),
-              blurRadius: 8,
-              offset: Offset(0, 3),
-            ),
-          ],
-        ),
-        child: Row(
-          children: [
-            Container(color: Color(0xffF1E6F6), child: icon1),
-            const SizedBox(width: 5),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  text1!,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 10,
-                  ),
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 8,
+            offset: Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(color: Color(0xffF1E6F6), child: icon1),
+          const SizedBox(width: 5),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                text1!,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 10,
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  text2!,
-                  style: TextStyle(color: Colors.black54, fontSize: 6),
-                ),
-              ],
-            ),
-            SizedBox(width: 110),
-            Icon(Icons.arrow_forward_ios),
-          ],
-        ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                text2!,
+                style: TextStyle(color: Colors.black54, fontSize: 6),
+              ),
+            ],
+          ),
+          SizedBox(width: 110),
+          Icon(Icons.arrow_forward_ios),
+        ],
       ),
     );
   }
